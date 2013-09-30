@@ -37,7 +37,7 @@ module.exports = function(grunt) {
       },
       custom_options: {
         options: {
-          count: 100
+          maindeck_count: 100
         },
         files: {
           'commander': 'test/fixtures/commander'

@@ -16,10 +16,10 @@ module.exports = function(grunt) {
   grunt.registerMultiTask('mtg_validate', 'Grunt plugin to validate mtg deck lists.', function() {
     // Merge task-specific and/or target-specific options with these defaults.
     var options = this.options({
-      count: 60
+      maindeck_count: 60
     });
 
-    var expectedCount = options.count;
+    var expectedCount = options.maindeck_count;
 
     // Iterate over all specified file groups.
     this.files.forEach(function(f) {
